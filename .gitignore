@@ -1,0 +1,11 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore log files and environment variables
+*.log
+.env
+
+# Ignore build/compiled files
+dist/
+build/
