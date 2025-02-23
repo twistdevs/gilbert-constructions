@@ -1,0 +1,146 @@
+/*************** Color Palette ***************/
+
+
+
+/* h1, h2 {
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700; /* Bold for strong impact */
+/* 
+p, a {
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400; /* Regular for easy reading */
+
+
+
+/*************** Universal Styles ***************/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+}
+
+/*************** Top Bar ***************/
+.top-bar {
+    background: linear-gradient(180deg, #DA6A6A, #DB0706);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+    /* height: 64px; */
+}
+.contact-info {
+    display: flex;
+    justify-content: start;
+    width: auto;
+}
+.infos {
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+.infos-text {
+    color: #020258;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+.icon-box {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    background: #020258;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.icon-box i {
+    font-size: 16px;
+    color: white;
+}
+.social-links {
+    display: flex;
+    width: auto;
+    justify-content: right;
+    align-items: center;
+}
+.social-links a {
+    color: #020258;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: 30px;
+}
+
+/*************** Navigation ***************/
+.nav-bar {
+    background-color: #020258;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+}
+
+.nav-bar a{
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+}
+.logo span {
+    font-size: 2rem;
+}
+.logo >span{
+    color: #FFFFFF;
+    font-weight: 500;
+}
+.logo span:last-child{
+    color: #DB0706;
+    font-weight: 700;
+}
+.navlinks {
+    text-align: right;
+}
+.navlinks ul {
+    list-style: none;
+    display: flex; /* Align items in a row */
+    gap: 10px; /* Space between items */
+    padding: 0;
+    margin: 0;
+}
+.navlinks ul li {
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+.navlinks ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.navlinks ul li a::after{
+    content: '';
+    background: #DB0706;
+    width: 0%;
+    height: 2px;
+    display: block;
+    transition: 0.3s;
+}
+.navlinks ul li a:hover::after{
+    width: 100%;
+}
+.navlinks ul li:not(:last-child)::after {
+    content: "/";  /* Separator */
+    color: #DB0706;  /* Adjust separator color */
+    margin-left: 15px; /* Space between text and separator */
+    font-weight: 400;
+}
+
+
+/*************** Hero ***************/
