@@ -18,69 +18,86 @@
         <!-- Top Bar -->
         <div class="top-bar">
 
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <!-- Telephone details-->
-                <div class="infos">
-                    <div class="icon-box">
-                        <i class="fas fa-phone"></i>
+            <div class="container">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <!-- Telephone details-->
+                    <div class="infos">
+                        <div class="icon-box">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <span role="text" aria-label="Call us at +123(45)78-90" class="infos-text">+123(45)78-90</span>
                     </div>
-                    <span role="text" aria-label="Call us at +123(45)78-90" class="infos-text">+123(45)78-90</span>
+
+                    <!-- Email details-->
+                    <div class="infos">
+                        <div class="icon-box">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <span role="text" aria-label="Send an email to info@example.com"
+                            class="infos-text">info@company.com</span>
+                    </div>
                 </div>
 
-                <!-- Email details-->
-                <div class="infos">
-                    <div class="icon-box">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <span role="text" aria-label="Send an email to info@example.com"
-                        class="infos-text">info@company.com</span>
+                <!-- Social Media links -->
+                <div class="social-links">
+                    <a href="#" aria-label="Visit our Facebook page"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Check our Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Watch us on TikTok"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
 
-            <!-- Social Media links -->
-            <div class="social-links">
-                <a href="#" aria-label="Visit our Facebook page"><i class="fab fa-facebook"></i></a>
-                <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="Check our Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" aria-label="Watch us on TikTok"><i class="fab fa-tiktok"></i></a>
-            </div>
         </div>
 
         <!-- Navigation Bar -->
         <div class="nav-bar">
 
-            <!-- Logo & Company Name -->
-            <a href="#" class="logo">
-                <img src="images/logo.png" alt="Company Logo">
-                <span>GILBERT</span>&nbsp;<span>CONSTRUCTIONS</span>
-            </a>
+            <div class="container">
+                <!-- Logo & Company Name -->
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="Company Logo">
+                    <span>GILBERT</span>&nbsp;<span>CONSTRUCTIONS</span>
+                </a>
 
-            <!-- Main Navigation -->
-            <nav>
-                <div class="navlinks">
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">PROJECTS</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
-                </div>
-            </nav>
+                <!-- Main Navigation -->
+                <nav>
+                    <div class="navlinks">
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">SERVICES</a></li>
+                            <li><a href="#">PROJECTS</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
 
         </div>
     </header>
 
     <main>
         <section class="hero">
-            <div class="hero-content">
-                <h1>Your Vision, <span class="highlight">Our Expertise</span><br>Let's Build Together</h1>
-                <p>At Gilbert Constructions, we listen, plan, and execute <br>
-                    with precision, turning your vision into reality. <br>
-                    Because your project isn’t just a building, it’s a legacy
-                </p>
+            <div class="container">
+                <div class="hero-content">
+
+                    <!-- Hero and Message -->
+                    <h1>Your Vision, <span class="highlight">Our Expertise</span><br>Let's Build Together</h1>
+                    <p>At Gilbert Constructions, we listen, plan, and execute with precision, <br>turning your vision into reality. Because your project isn’t just a <br>building, it’s a legacy crafted with excellence, built to last.
+                    </p>
+
+                    <!-- Hero Call to Action Button -->
+                    <button class="cta-button">
+                        See Our Work
+                        <span class="arrow-box">
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                    
+                    
+                </div>
             </div>
         </section>
     </main>
