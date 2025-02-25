@@ -1,21 +1,23 @@
 /*************** Color Palette ***************/
 /* 
-#020258
-#DB0706
+#020258 Main{Blue}
+#DB0706 Secondary & Accent{Red}
+#666666 Secondary Text{Ash} 
  */
 
 
 /*************** Font Family *************
 /*font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;*/
-
+/* font-family: "Roboto", "Montserrat", sans-serif; */
 
 
 /*************** Universal Styles ***************/
 * {
     margin: 0;
     padding: 0;
-    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
 }
+
+
 
 .container {
     width: 90%;
@@ -24,6 +26,16 @@
     display: flex;
     margin: 0 auto;
     align-items: center;
+}
+
+h1, h2, h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700; /* Bold for impact */
+}
+
+p, span, li {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400; /* Regular for readability */
 }
 
 
@@ -177,8 +189,8 @@
 /*************** Hero ***************/
 .hero {
     background: url("../images/hero-bg.jpg") no-repeat center center/cover;
-    height: 75vh;
-    /* Full-screen height */
+    height: auto; /* screen height */
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -215,18 +227,21 @@
     align-items: flex-start; /* Align content to the left */
     text-align: left; /* Ensure text is left-aligned */
     width: auto;
-    max-width: 900px; /* Prevent overly wide text */
+    max-width: 900px;/* Prevent overly wide text */
     gap: 15px;
+    padding: 100px 0;
 }
 
 .hero-content h1{
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: white;
     line-height: 1.2;
 }
 
 .highlight{
     color:#DB0706;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
 }
 
 .hero-content p{
@@ -235,26 +250,26 @@
     line-height: 1.7;
 }
 
-.hero-buttons {
-    margin-top: 20px;
-}
-
 .cta-button {
     display: inline-flex;
     align-items: center;
     background-color: #DB0706; /* Red button */
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
-    padding: 12px 20px;
+    padding: 15px 25px;
     text-decoration: none;
-    border-radius: 5px;
     position: relative;
     transition: background 0.3s ease;
+    border: none;
+    margin-top: 50px;
 }
 
 .cta-button:hover {
-    background-color: #B90505; /* Darker red on hover */
+    background-color: #B30606;
+    color: white; /* Darker red on hover */
+    cursor: pointer;
+
 }
 
 .arrow-box {
@@ -272,40 +287,123 @@
     color: white;
     font-size: 1rem;
 }
-.hero-buttons {
-    margin-top: 20px;
+
+.rotate-up-right{
+    display: inline-block;
+    transform: rotate(-45deg);
 }
 
-.cta-button {
-    display: inline-flex;
-    align-items: center;
-    background-color: #DB0706; /* Red button */
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
-    padding: 12px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    position: relative;
-    transition: background 0.3s ease;
-}
 
-.cta-button:hover {
-    background-color: #B90505; /* Darker red on hover */
-}
 
-.arrow-box {
-    display: inline-flex;
+/*************** About Section ***************/
+.about {
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #020258;
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-    border-radius: 5px;
+    padding: 50px 0;
 }
 
-.arrow-box i {
-    color: white;
+/* Left Content */
+.about-content {
+    width: 50%;
+}
+
+.about-label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color:#020258;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+/* Small square decorations */
+.about-label::before,
+.about-label::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color:#DB0706;
+    display: inline-block;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.about-content p {
     font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.ceo-signature {
+    font-style: italic;
+    font-weight: 600;
+    color: #020258;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.signature {
+    font-family: 'Ms Madi', cursive;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.ceo-signature span {
+    display: flex;
+    margin-top: -40px;
+    justify-content: flex-end;
+    color: #666666;
+}
+
+/* Right Image */
+.about-image {
+    display: flex;
+    justify-content: flex-end;
+    width: 45%;
+    margin-top: 155px;
+}
+
+.image-frame {
+    background-color: #DB0706; /* Red background */
+}
+
+.image-frame img {
+    /* width: auto; */
+}
+
+/*************** Stats Section ***************/
+
+.stats {
+    background-color: #020258; /* Adjust to match your design */
+    color: white;
+    padding: 30px 0;
+    text-align: left;
+}
+
+.stats .container {
+    justify-content: space-between;
+}
+
+.stat h2 {
+    font-size: 2.5rem; /* Adjust size if needed */
+    font-weight: bold;
+}
+
+.stat p {
+    font-size: 1rem;
+    opacity: 0.8;
+    letter-spacing: 2px;
 }
