@@ -446,8 +446,7 @@ p, span, li {
 }
 
 .services-content {
-    flex: 1;
-    max-width: 50%px;
+    width: 50%;
 }
 
 .services-content h2 {
@@ -465,34 +464,54 @@ p, span, li {
 }
 
 .services-list {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 20px;
+    width: 40%;
 }
+
 
 .service-item {
     display: flex;
     align-items: center;
     background: #d0d0e3;
-    padding: 16px;
-    border-radius: 4px;
     font-weight: bold;
+    justify-content: stretch;
 }
 
-.service-item:first-child {
-    background: black;
-    color: white;
-}
 
-.service-icon {
-    width: 50px;
-    height: 50px;
+.service-item .icon-box {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: red;
-    margin-right: 12px;
-    border-radius: 4px;
-    color: white;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: 0;
+}
+
+
+.service-item:first-child .icon-box i{
+    color: #DB0706;
+}
+
+.service-item .icon-box i {
+    font-size: 50px;
+    color:#020258;
+}
+
+.black-bg {
+    background-color: black;
+}
+
+
+
+.red-bg {
+    background-color: red;
+}
+
+.service-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
 }
