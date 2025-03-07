@@ -41,7 +41,7 @@ p, span, li {
 
 /* H2 Labels */
 .label {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color:#020258;
     text-transform: uppercase;
@@ -304,7 +304,6 @@ p, span, li {
     width: 30px;
     height: 30px;
     margin-left: 10px;
-    border-radius: 5px;
 }
 
 .arrow-box i {
@@ -382,7 +381,7 @@ p, span, li {
     justify-content: flex-end;
     width: auto;
     height: auto;
-    /* margin-top: 100px; */
+    margin-top: 100px;
 }
 
 .image-frame {
@@ -394,9 +393,7 @@ p, span, li {
     margin-top: 10px;
 }
 
-.image-frame img {
-    /* display: block; */
-}
+
 
 /*************** Stats Section ***************/
 
@@ -422,10 +419,6 @@ p, span, li {
     letter-spacing: 3px;
 }
 
-.services {
-    padding: 80px 0;
-    background: #fff;
-}
 
 .container {
     display: flex;
@@ -439,6 +432,10 @@ p, span, li {
 
 
 /*************** Services Section ***************/
+.services {
+    padding: 50px 0;
+    background: #fff;
+}
 
 .services .container {
     align-items: start;
@@ -468,6 +465,7 @@ p, span, li {
     flex-direction: column;
     gap: 20px;
     width: 40%;
+    margin-top: 100px;
 }
 
 
@@ -514,4 +512,155 @@ p, span, li {
     font-size: 24px;
     font-weight: bold;
     color: black;
+}
+
+
+
+/*************** Work Section ***************/
+.work {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    gap: 20px;
+}
+
+.work h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.work p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    width: 38%;
+    text-align: center;
+}
+
+.work-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery1 {
+    position: relative; /* Parent div becomes reference for positioning */
+}
+
+.gallery1 button {
+    width: max-content;
+    position: absolute;
+    bottom: 15px; /* Adjust vertical position */
+    left: 50%; /* Move to the center */
+    transform: translateX(-50%); /* Shift back by 50% of its own width */
+    margin: 0;
+}
+
+.work-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: red;
+    color: white;
+    padding: 12px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: fit-content;
+}
+
+.btn span {
+    font-size: 18px;
+}
+
+
+
+/*************** Testimonials Section ***************/
+.testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.testimonial-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.testimonial-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.testimonial-content p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.testimonial-image {
+    flex: 1;
+    position: relative;
+}
+
+.testimonial-image img {
+    width: 100%;
+}
+
+.testimonial-box {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimonial-box img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.testimonial-text {
+    text-align: left;
+}
+
+.testimonial-text p {
+    font-size: 14px;
+    color: #333;
+}
+
+h4 {
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.prev-btn, .next-btn {
+    background: navy;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
 }
