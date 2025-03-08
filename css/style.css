@@ -301,14 +301,13 @@ p, span, li {
     justify-content: center;
     align-items: center;
     background-color: #020258; /* Blue box */
-    width: 30px;
-    height: 30px;
     margin-left: 10px;
+    padding: 10px;
 }
 
 .arrow-box i {
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .rotate-up-right{
@@ -628,10 +627,23 @@ p, span, li {
     background: white;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.prev-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .testimonial-box img {
@@ -655,12 +667,13 @@ h4 {
     font-weight: bold;
 }
 
-.prev-btn, .next-btn {
-    background: navy;
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 18px;
+
+.prev-btn .arrow-box, .next-btn .arrow-box{
     cursor: pointer;
-    border-radius: 50%;
+    width: auto;
+    display: table-cell;
+}
+
+.prev-btn .arrow-box i, .next-btn .arrow-box i {
+    font-size: 3rem;
 }
