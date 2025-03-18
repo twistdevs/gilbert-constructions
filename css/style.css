@@ -9,6 +9,7 @@
 /*************** Font Family *************
 /*font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;*/
 /* font-family: "Roboto", "Montserrat", sans-serif; */
+/* font-family: 'Ms Madi', cursive; */
 
 
 /*************** Universal Styles ***************/
@@ -615,61 +616,69 @@ p, span, li {
     position: relative;
 }
 
-.testimonial-image img {
-    width: 100%;
-}
-
-.testimonial-box {
+.testimonial-container {
     position: absolute;
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 0;
+    left: 10%;
+    transform: translateX(-30%);
     background: white;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 60px;
+    box-shadow: 0 4px 55px 10px rgba(125, 125, 191, 1);
     display: flex;
-    align-items: center;
-    gap: 20px;
 }
 
 .prev-btn {
     position: absolute;
     top: 50%;
+    left: -30px;
     transform: translateY(-50%);
+    border: none;
     cursor: pointer;
 }
 
 .next-btn {
     position: absolute;
     top: 50%;
+    right: -30px;
     transform: translateY(-50%);
+    border: none;
     cursor: pointer;
 }
 
-.testimonial-box img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+.testimonial-box {
+    display: flex;
+    gap: 30px;
+}
+
+.testimonial-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
 
 .testimonial-text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.testimonial-msg {
     text-align: left;
 }
 
-.testimonial-text p {
+.testimonial-name {
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Ms Madi', cursive;
+}
+
+.testimonial-msg p {
     font-size: 14px;
     color: #333;
 }
 
-h4 {
-    font-size: 16px;
-    margin-top: 5px;
-    font-weight: bold;
-}
-
-
 .prev-btn .arrow-box, .next-btn .arrow-box{
-    cursor: pointer;
     width: auto;
     display: table-cell;
 }
