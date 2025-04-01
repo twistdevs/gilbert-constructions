@@ -74,7 +74,7 @@ p, span, li {
     justify-content: space-between;
 }
 
-.contact-info {
+.top-bar-contact-info {
     display: flex;
     justify-content: start;
     width: auto;
@@ -142,7 +142,7 @@ p, span, li {
     align-items: center;
 }
 
-.logo img {
+.company-logo {
     width: 80px;
 }
 
@@ -294,7 +294,6 @@ p, span, li {
     background-color: #B30606;
     color: white; /* Darker red on hover */
     cursor: pointer;
-
 }
 
 .arrow-box {
@@ -329,6 +328,7 @@ p, span, li {
 .about .container {
     align-items: start;
     padding-top: 50px;
+    gap: 70px;
 }
 
 /* Left Content */
@@ -336,11 +336,8 @@ p, span, li {
     width: 50%;
 }
 
-
-
 .about-content h2 {
     font-size: 2.5rem;
-    font-weight: 700;
     margin-bottom: 30px;
     line-height: 1.2;
 }
@@ -420,17 +417,6 @@ p, span, li {
 }
 
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
-
 /*************** Services Section ***************/
 .services {
     padding: 50px 0;
@@ -440,6 +426,7 @@ p, span, li {
 .services .container {
     align-items: start;
     padding-top: 50px;
+    gap: 70px;
 }
 
 .services-content {
@@ -448,7 +435,6 @@ p, span, li {
 
 .services-content h2 {
     font-size: 2.5rem;
-    font-weight: 700;
     margin-bottom: 30px;
     line-height: 1.2;
 }
@@ -523,12 +509,11 @@ p, span, li {
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
-    gap: 20px;
+    gap: 30px;
 }
 
 .work h2 {
     font-size: 2.5rem;
-    font-weight: 700;
     line-height: 1.2;
 }
 
@@ -600,8 +585,8 @@ p, span, li {
 
 .testimonial-content h2 {
     font-size: 2.5rem;
-    font-weight: 700;
     line-height: 1.2;
+    margin-bottom: 30px;
 }
 
 .testimonial-content p {
@@ -685,4 +670,304 @@ p, span, li {
 
 .prev-btn .arrow-box i, .next-btn .arrow-box i {
     font-size: 3rem;
+}
+
+
+
+/*************** FAQ Section ***************/
+.faq {
+    margin: auto;
+    padding: 50px 0;
+}
+
+.faq .container {
+    flex-direction: column;
+    width: 70%;
+}
+
+.faq .container h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq-main-paragraph {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.faq-item {
+    width: 100%;
+    padding: 25px 0;
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    font-size: 30px;
+    font-weight: 550;
+    cursor: pointer;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.faq-question p {
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.plus-minus {
+    font-weight: 700;
+    font-size: 35px;
+    background: #DB0706;
+    color: #020258;
+    height: 45px;
+    width: 45px;
+}
+
+.faq-divider {
+    width: 100%;
+    background: #A3A3E8;
+    height: 2px;
+}
+
+.faq-answer {
+    display: block;
+    padding: 20px 0;
+    width: 90%;
+}
+
+.faq-answer p {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.4;
+    word-spacing: 2.5px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*************** Contact Section ***************/
+.contact {
+    padding: 70px 0;
+}
+
+.contact .container {
+    background: #D0CDD7;
+    padding: 0;
+    flex-direction: column;
+    box-shadow: 0 2px 40px 5px rgba(125, 125, 191, 1);
+}
+
+.red-line {
+    width: 100%;
+    background: #DB0706;
+    height: 5px;
+}
+
+.sub-container {
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+}
+
+/* Seperator inside the .sub-container */
+.horizontal-seperator {
+    width: 2px;
+    background: white;
+}
+
+/* Left Side: Contact Info */
+.contact-info {
+    margin: 45px 0;
+    width: 30%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.contact-info p {
+    line-height: 24px;
+}
+
+.contact-info-details {
+    margin: 45px 0;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.contact-item .icon {
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.contact-item div strong {
+    font-size: 20px;
+}
+
+.contact-item div p:last-child{
+    padding-top: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 55px;
+}
+
+.social-icons a {
+    font-size: 35px;
+    color: black;
+}
+
+/* Right Side: Quote Form */
+.quote-form {
+    width: 50%;
+    padding: 0 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-form h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    line-height: 56px;
+    letter-spacing: 1px;
+}
+
+.quote-form p {
+    margin-bottom: 20px;
+}
+
+.req-a-quote {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+    padding: 15px 25px;
+    font-size: 16px;
+    /* color:  */
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group input {
+    flex: 1;
+}
+
+.input-group select {
+    flex: 1;
+}
+
+/* Button Styling */
+.send-message-button {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DB0706; /* Red button */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 20px 30px;
+    text-decoration: none;
+    position: relative;
+    transition: background 0.3s ease;
+    border: none;
+    margin-top: 50px;
+}
+
+.send-message-button:hover {
+    background-color: #B30606;
+    color: white; /* Darker red on hover */
+    cursor: pointer;
+}
+
+.send-message-button .arrow-box {
+    padding: 20px;
+}
+
+.send-message-button .arrow-box i {
+    font-size: 2rem;
+}
+
+/*************** Footer ***************/
+footer {
+    background: #020258;
+}
+
+.footer-left {
+    width: 65%;
+}
+
+.company-name-logo {
+    display: flex;
+    align-items: center;
+}
+
+.company-name-logo .company-logo {
+    padding-bottom: 30px;
+}
+
+.company-name-logo div span{
+    font-size: 30px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.company-name-logo div span:last-of-type {
+    color :#DB0706;
+}
+
+.motto p{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.footer-right {
+    width: 35%;
+    display: flex;
+}
+
+.footer-contact {
+    width: 55%;
+    color: #FFFFFF; 
+}
+
+.footer-contact h3 {
+    line-height: 24px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
 }
