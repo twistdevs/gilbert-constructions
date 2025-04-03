@@ -923,6 +923,7 @@ p, span, li {
 /*************** Footer ***************/
 footer {
     background: #020258;
+    padding: 50px;
 }
 
 .footer-left {
@@ -932,10 +933,11 @@ footer {
 .company-name-logo {
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .company-name-logo .company-logo {
-    padding-bottom: 30px;
+    padding-right: 5px;
 }
 
 .company-name-logo div span{
@@ -957,11 +959,15 @@ footer {
 .footer-right {
     width: 35%;
     display: flex;
+    justify-content: space-between;
 }
 
 .footer-contact {
-    width: 55%;
-    color: #FFFFFF; 
+    width: 65%;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer-contact h3 {
@@ -970,4 +976,65 @@ footer {
     font-weight: 700;
     letter-spacing: 1.5px;
     margin-bottom: 30px;
+}
+
+.footer-contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    line-height: 24px;
+}
+
+.footer-contact-details div{
+    display: inherit;
+    gap: 10px;
+}
+
+.footer-contact-details div i {
+    color: #DB0706;
+    font-size: 24px;
+}
+
+.footer-contact-details div p {
+    letter-spacing: 1.5px;
+}
+
+.footer-socials {
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    
+}
+
+.footer-socials a {
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+.footer-bottom .container {
+    flex-direction: column;
+    align-items: start;
+    padding-bottom: 0;
+}
+
+.footer-bottom .container p {
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+
+.footer-bottom .container hr {
+    width: 100%;
+}
+
+/*twistdevs*/
+.twistdevs .container{
+    color: #666666;
+    font-size: 14px;
+    letter-spacing: 1px;
+    align-items: end;
+    flex-direction: column;
+    padding-top: 0;
 }
