@@ -1054,3 +1054,53 @@ footer {
     flex-direction: column;
     padding-top: 0;
 }
+
+
+
+
+@media screen and (max-width: 1024px) {
+    /* Adjustments for 1024px and below */
+    
+    body {
+        font-size: 16px; /* Example: Adjust font size */
+    }
+    
+    header {
+        padding: 20px; /* Example: Adjust padding */
+    }
+
+    .container {
+        padding: 0 20px; /* Example: Adjust container padding */
+    }
+
+    .faq-item {
+        margin-bottom: 20px; /* Adjust spacing between FAQ items */
+    }
+
+    .faq-answer {
+        font-size: 14px; /* Reduce font size in answers for readability */
+    }
+
+    /* Example: Adjust layout for navigation */
+    .nav {
+        display: flex;
+        flex-direction: column; /* Stack the nav items vertically */
+        align-items: center;
+    }
+
+    .nav li {
+        margin: 10px 0; /* Adjust space between nav items */
+    }
+
+    .faq-question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .plus-minus {
+        font-size: 20px; /* Make icons a bit smaller for tablets */
+    }
+
+    /* Adjust any other element as needed */
+}
