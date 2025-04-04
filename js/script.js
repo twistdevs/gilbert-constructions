@@ -3,9 +3,13 @@ document.querySelectorAll(".faq-question").forEach(button => {
     button.addEventListener("click", () => {
         const answer = button.nextElementSibling;
         answer.classList.toggle("hidden");
-        button.querySelector(".plus-minus").textContent = answer.classList.contains("hidden") ? "+" : "-";
+
+        const icon = button.querySelector(".plus-minus i");
+        icon.classList.toggle("fa-plus");
+        icon.classList.toggle("fa-minus");
     });
 });
+
 
 // Contact & Form Submission with Loading Indicator
 document.querySelector(".quote-form form").addEventListener("submit", function(event) {

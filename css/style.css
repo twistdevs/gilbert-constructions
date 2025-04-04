@@ -482,6 +482,7 @@ p, span, li {
 .service-item .icon-box i {
     font-size: 50px;
     color:#020258;
+    width: 50px;
 }
 
 .black-bg {
@@ -498,6 +499,8 @@ p, span, li {
     font-size: 24px;
     font-weight: bold;
     color: black;
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -728,8 +731,16 @@ p, span, li {
     font-size: 35px;
     background: #DB0706;
     color: #020258;
-    height: 45px;
-    width: 45px;
+    height: 50px;
+    width: 50px;
+}
+
+.plus-minus i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
 }
 
 .faq-divider {
@@ -824,6 +835,10 @@ p, span, li {
     margin-right: 20px;
 }
 
+.contact-item .icon i {
+    width: 25px;
+}
+
 .contact-item div strong {
     font-size: 20px;
 }
@@ -834,7 +849,7 @@ p, span, li {
 
 .social-icons {
     display: flex;
-    gap: 55px;
+    justify-content: space-between;
 }
 
 .social-icons a {
@@ -912,12 +927,12 @@ p, span, li {
     cursor: pointer;
 }
 
-.send-message-button .arrow-box {
-    padding: 20px;
-}
-
 .send-message-button .arrow-box i {
     font-size: 2rem;
+}
+
+#loading-indicator {
+    display: none;
 }
 
 /*************** Footer ***************/
@@ -993,6 +1008,7 @@ footer {
 .footer-contact-details div i {
     color: #DB0706;
     font-size: 24px;
+    width: 24px;
 }
 
 .footer-contact-details div p {

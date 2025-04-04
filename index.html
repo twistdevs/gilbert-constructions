@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 
 <body>
@@ -201,14 +202,14 @@
                 
                     <div class="service-item">
                         <div class="icon-box red-bg">
-                            <i class="fa-solid fa-paint-roller"></i>
+                            <i class="fa-solid fa-house-circle-check"></i>
                         </div>
                         <div class="service-text">RESTORATION</div>
                     </div>
                 
                     <div class="service-item">
                         <div class="icon-box red-bg">
-                            <i class="fa-solid fa-trowel-bricks"></i>
+                            <i class="fas fa-handshake"></i>
                         </div>
                         <div class="service-text">CONSULTING</div>
                     </div>
@@ -310,7 +311,9 @@
                         <div>
                             <p>How long does a construction project usually take?</p>
                         </div>
-                        <span class="plus-minus">-</span>
+                        <div class="plus-minus">
+                            <i class="fa-solid fa-minus"></i>
+                        </div>
                     </button>
                     <div class="faq-answer">
                         <p>
@@ -330,7 +333,9 @@
                         <div>
                             <p>Do I need permits for my projects?</p>
                         </div>
-                        <span class="plus-minus">+</span>
+                        <div class="plus-minus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
                     </button>
                     <div class="faq-answer hidden">
                         <p>
@@ -350,7 +355,9 @@
                         <div>
                             <p>Can I make changes after construction starts?</p>
                         </div>
-                        <span class="plus-minus">+</span>
+                        <div class="plus-minus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
                     </button>
                     <div class="faq-answer hidden">
                         <p>
@@ -370,7 +377,9 @@
                         <div>
                             <p>How much will my construction project cost?</p>
                         </div>
-                        <span class="plus-minus">+</span>
+                        <div class="plus-minus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
                     </button>
                     <div class="faq-answer hidden">Costs vary based on size, materials, and labour. We provide a detailed
                         estimate after an initial consultation.</div>
@@ -383,7 +392,9 @@
                         <div>
                             <p>How do you ensure quality and safety on-site?</p>
                         </div>
-                        <span class="plus-minus">+</span>
+                        <div class="plus-minus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
                     </button>
                     <div class="faq-answer hidden">
                         <p>
@@ -403,7 +414,9 @@
                         <div>
                             <p>What materials do you use?</p>
                         </div>
-                        <span class="plus-minus">+</span>
+                        <div class="plus-minus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
                     </button>
                     <div class="faq-answer hidden">
                         <p>
@@ -433,7 +446,7 @@
                     <!-- Contact Information and Detials-->
                     <div class="contact-info-details">
                         <div class="contact-item">
-                            <span class="icon">💬</span>
+                            <span class="icon"><i class="fa-solid fa-message"></i></i></span>
                             <div>
                                 <strong>Chat to us</strong>
                                 <p>Our friendly team is here to help.</p>
@@ -442,7 +455,7 @@
                         </div>
             
                         <div class="contact-item">
-                            <span class="icon">📍</span>
+                            <span class="icon"><i class="fa-solid fa-location-dot"></i></i></span>
                             <div>
                                 <strong>Visit us</strong>
                                 <p>Come and say hello at our office.</p>
@@ -451,7 +464,7 @@
                         </div>
             
                         <div class="contact-item">
-                            <span class="icon">📞</span>
+                            <span class="icon"><i class="fa-solid fa-phone"></i></i></span>
                             <div>
                                 <strong>Call us</strong>
                                 <p>Mon-Fri from 8am to 5pm</p>
@@ -462,11 +475,12 @@
         
                     <!-- Social Media Links -->
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-x-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+                        <a href="#" aria-label="Visit our Facebook page"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Visit our Twitter page"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Visit our LinkedIn page"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Visit our Instagram page"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Watch us on TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>                    
                 </div>
 
                 <div class="horizontal-seperator"></div>
@@ -495,6 +509,10 @@
                             </span>
                         </button>
                     </form>
+
+                    <!-- Add this in your HTML file -->
+                    <div id="loading-indicator">Submitting...</div>
+                
                 </div>
                 </div>
 
@@ -525,26 +543,29 @@
                     <h3>Contact</h3>
                     <div class="footer-contact-details">
                         <div>
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fa-solid fa-location-dot"></i>
                             <p>Uptown, Benin City, Edo State, NG</p>
                         </div>
                         <div>
-                            <i class="fas fa-phone-alt"></i>
+                            <i class="fa-solid fa-phone"></i>
                             <p>+1 (234) 56-7890</p>
                         </div>
                         <div>
-                            <i class="fas fa-envelope"></i><p>email@gmail.com</p>
+                            <i class="fa-solid fa-at"></i>
+                            <p>email@gmail.com</p>
                         </div>
                     </div>
                 </div>
 
+                <!-- Footer Socials Links -->
                 <div class="footer-socials">
-                    <!-- Footer Social Links -->
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Visit our Facebook page"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Visit our Twitter page"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Visit our Instagram page"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Watch us on TikTok"><i class="fab fa-tiktok"></i></a>
                 </div>
+
             </div>
         </div>
     
