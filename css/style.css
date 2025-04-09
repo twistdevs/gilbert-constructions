@@ -23,15 +23,19 @@
 .container {
     width: 90%;
     max-width: 1200px;
-    padding: 20px;
+    padding: 0 10px;
     display: flex;
-    margin: 0 auto;
+    margin: 25px auto;
     align-items: center;
 }
 
 h1, h2, h3 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700; /* Bold for impact */
+}
+
+h2 {
+    font-size: 1.667rem
 }
 
 p, span, li {
@@ -47,7 +51,7 @@ p, span, li {
     color:#020258;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     display: inline-flex;
     align-items: center;
     gap: 15px;
@@ -72,6 +76,7 @@ p, span, li {
 
 .top-bar .container {
     justify-content: space-between;
+    margin: 10px auto;
 }
 
 .top-bar-contact-info {
@@ -131,6 +136,7 @@ p, span, li {
 
 .nav-bar .container {
     justify-content: space-between;
+    margin: 10px auto;
 }
 
 .nav-bar a {
@@ -254,7 +260,7 @@ p, span, li {
     width: auto;
     max-width: 900px;/* Prevent overly wide text */
     gap: 15px;
-    padding: 100px 0;
+    padding: 70px 0;
 }
 
 .hero-content h1{
@@ -271,7 +277,7 @@ p, span, li {
 
 .hero-content p{
     color:#FFFFFF;
-    margin-top: 20px;
+    margin-top: 30px;
     line-height: 1.7;
 }
 
@@ -280,9 +286,9 @@ p, span, li {
     align-items: center;
     background-color: #DB0706; /* Red button */
     color: white;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 600;
-    padding: 15px 25px;
+    padding: 5px 15px;
     text-decoration: none;
     position: relative;
     transition: background 0.3s ease;
@@ -302,7 +308,7 @@ p, span, li {
     align-items: center;
     background-color: #020258; /* Blue box */
     margin-left: 10px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .arrow-box i {
@@ -322,12 +328,11 @@ p, span, li {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
 }
 
 .about .container {
     align-items: start;
-    padding-top: 50px;
+    padding-top: 20px;
     gap: 70px;
 }
 
@@ -337,7 +342,6 @@ p, span, li {
 }
 
 .about-content h2 {
-    font-size: 2.5rem;
     margin-bottom: 30px;
     line-height: 1.2;
 }
@@ -375,29 +379,20 @@ p, span, li {
 /* Right Image */
 .about-image {
     display: flex;
-    justify-content: flex-end;
+    margin: 50px 0;
+}
+
+.about-image img {
+    height: 400px;
     width: auto;
-    height: auto;
-    margin-top: 100px;
 }
-
-.image-frame {
-    background-color: #DB0706; /* Red background */
-}
-
-.image-container {
-    margin-right: 10px;
-    margin-top: 10px;
-}
-
-
 
 /*************** Stats Section ***************/
 
 .stats {
     background-color: #020258; /* Adjust to match your design */
     color: white;
-    padding: 30px 0;
+    padding: 15px 0;
     text-align: left;
 }
 
@@ -434,8 +429,7 @@ p, span, li {
 }
 
 .services-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     line-height: 1.2;
 }
 
@@ -470,7 +464,7 @@ p, span, li {
     justify-content: center;
     width: auto;
     height: auto;
-    padding: 20px;
+    padding: 5px 20px;
     margin: 0;
 }
 
@@ -496,7 +490,7 @@ p, span, li {
 }
 
 .service-text {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     color: black;
     width: 100%;
@@ -512,12 +506,11 @@ p, span, li {
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
-    gap: 30px;
 }
 
 .work h2 {
-    font-size: 2.5rem;
     line-height: 1.2;
+    margin-bottom: 20px;
 }
 
 .work p {
@@ -526,6 +519,7 @@ p, span, li {
     line-height: 1.6;
     width: 38%;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .work-gallery {
@@ -581,15 +575,18 @@ p, span, li {
     padding: 50px 0;
 }
 
+.testimonials .container {
+    gap: 100px;
+}
+
 .testimonial-content {
     flex: 1;
     max-width: 50%;
 }
 
 .testimonial-content h2 {
-    font-size: 2.5rem;
     line-height: 1.2;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .testimonial-content p {
@@ -602,6 +599,10 @@ p, span, li {
 .testimonial-image {
     flex: 1;
     position: relative;
+}
+.testimonial-image-base {
+    width: auto;
+    height: 450px;
 }
 
 .testimonial-container {
@@ -652,6 +653,7 @@ p, span, li {
 
 .testimonial-msg {
     text-align: left;
+    color: #333;
 }
 
 .testimonial-name {
@@ -689,10 +691,9 @@ p, span, li {
 }
 
 .faq .container h2 {
-    font-size: 2.5rem;
     line-height: 1.2;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .faq-main-paragraph {
@@ -705,16 +706,15 @@ p, span, li {
 
 .faq-item {
     width: 100%;
-    padding: 25px 0;
+    padding: 20px 0;
 }
 
 .faq-question {
     background: none;
     border: none;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 550;
     cursor: pointer;
-    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -722,7 +722,7 @@ p, span, li {
 }
 
 .faq-question p {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 550;
 }
 
@@ -733,12 +733,12 @@ p, span, li {
     color: #020258;
     height: 50px;
     width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .plus-minus i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 50px;
     height: 50px;
 }
@@ -751,7 +751,7 @@ p, span, li {
 
 .faq-answer {
     display: block;
-    padding: 20px 0;
+    padding: 5px 0;
     width: 90%;
 }
 
@@ -787,7 +787,7 @@ p, span, li {
 
 .sub-container {
     display: flex;
-    padding: 40px;
+    padding: 25px;
     justify-content: space-between;
 }
 
@@ -799,23 +799,20 @@ p, span, li {
 
 /* Left Side: Contact Info */
 .contact-info {
-    margin: 45px 0;
     width: 30%;
-    padding: 20px 40px;
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .contact-info h2 {
-    font-size: 30px;
+    font-size: 24px;
     margin-bottom: 20px;
-    line-height: 24px;
-    letter-spacing: 0.5px;
 }
 
-.contact-info p {
-    line-height: 24px;
+.underinfo {
+    letter-spacing: 1px;
 }
 
 .contact-info-details {
@@ -827,7 +824,6 @@ p, span, li {
 
 .contact-item {
     display: flex;
-    margin-bottom: 15px;
 }
 
 .contact-item .icon {
@@ -860,16 +856,14 @@ p, span, li {
 /* Right Side: Quote Form */
 .quote-form {
     width: 50%;
-    padding: 0 70px;
+    padding: 0 50px;
     display: flex;
     flex-direction: column;
 }
 
 .quote-form h2 {
-    font-size: 50px;
+    font-size: 24px;
     margin-bottom: 20px;
-    line-height: 56px;
-    letter-spacing: 1px;
 }
 
 .quote-form p {
@@ -885,9 +879,8 @@ p, span, li {
 .quote-form input,
 .quote-form select,
 .quote-form textarea {
-    padding: 15px 25px;
+    padding: 15px 20px;
     font-size: 16px;
-    /* color:  */
 }
 
 .input-group {
@@ -913,7 +906,7 @@ p, span, li {
     color: white;
     font-size: 1.5rem;
     font-weight: 700;
-    padding: 20px 30px;
+    padding: 10px 15px;
     text-decoration: none;
     position: relative;
     transition: background 0.3s ease;
@@ -996,8 +989,8 @@ footer {
 .footer-contact-details {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    line-height: 24px;
+    gap: 15px;
+    line-height: 20px;
 }
 
 .footer-contact-details div{
@@ -1020,7 +1013,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 35px;
+    gap: 25px;
     
 }
 
@@ -1058,49 +1051,204 @@ footer {
 
 
 
+/* Media Query for tablets (max-width: 1024px) */
 @media screen and (max-width: 1024px) {
-    /* Adjustments for 1024px and below */
-    
-    body {
-        font-size: 16px; /* Example: Adjust font size */
-    }
-    
-    header {
-        padding: 20px; /* Example: Adjust padding */
-    }
 
     .container {
-        padding: 0 20px; /* Example: Adjust container padding */
+        max-width: 960px;
+        width: 90%;
+        padding: 0 20px;
+      }
+
+
+    .label {
+        font-size: 1.2rem;
+        letter-spacing: .8px;
+        margin-bottom: 5px;
+        gap: 10px;
     }
 
-    .faq-item {
-        margin-bottom: 20px; /* Adjust spacing between FAQ items */
+    h2 {
+        font-size: 1.5rem;
     }
 
-    .faq-answer {
-        font-size: 14px; /* Reduce font size in answers for readability */
+    /*Top-Bar*/
+    .top-bar {
+        font-size: 0.8rem;
     }
 
-    /* Example: Adjust layout for navigation */
-    .nav {
-        display: flex;
-        flex-direction: column; /* Stack the nav items vertically */
-        align-items: center;
+    .top-bar .container {
+        margin: 5px auto;
     }
 
-    .nav li {
-        margin: 10px 0; /* Adjust space between nav items */
+    .infos-text {
+        font-size: 0.8rem;
     }
 
-    .faq-question {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .icon-box {
+        width: 22px;
+        height: 22px;
+    }
+
+    .icon-box i {
+        font-size: 12px;
+    }
+
+    .social-links a {
+        font-size: 16px;
+    }
+
+    /*Navigation-Bar*/
+    .nav-bar .container {
+        margin: 5px auto;
+    }
+
+    .company-logo {
+        width: 60px;
+    }
+
+    .logo span {
+        font-size: 1.2rem;
+    }
+
+    .navlinks ul li a {
+        font-size: 0.8rem;
+    }
+
+
+    /* Hero */
+    .hero-content h1 {
+        font-size: 2.2rem;
+        line-height: 1;
+    }
+
+    .hero-content p {
+        margin-top: 20px;
+        line-height: 1.2;
+    }
+
+
+
+    /* About Section */
+    .about-content h2 {
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+
+    .about-content p {
+        line-height: 1.2;
+    }
+
+    .ceo-signature span {
+        margin-top: -20px;
+    }
+
+    .about-image img {
+        height: 350px;
+        width: auto;
+    }
+
+    /* Stat */
+    .stat h2 {
+        font-size: 2rem;
+    }
+
+
+    /* Services */
+    .services-content p {
+        line-height: 1.2;
+    }
+
+    .service-item .icon-box i {
+        font-size: 40px;
+        width: 40px;
+    }
+
+    .service-text {
+        font-size: 20px;
+    }
+
+    /* Work Sectiion */
+    .work p {
+        line-height: 1.2;
+        width: 35%;
+        margin-bottom: 20px;
+    }
+
+    /* Testimonial Section */
+    .testimonial-content p {
+        line-height: 1.2;
+    }
+
+    .testimonial-image-base {
+        height: 350px;
+    }
+
+    .testimonial-container {
+        left: 5%;
+        transform: translateX(-40%);
+        padding: 10px 25px;
+        box-shadow: 0 4px 33px 8px rgba(125, 125, 191, 1);
+    ;
+    }
+
+    .testimonial-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .testimonial-text {
+        gap: 7px;
+    }
+
+    .testimonial-msg {
+        font-size: .9rem;
+    }
+
+    .prev-btn .arrow-box i, .next-btn .arrow-box i {
+        font-size: 2rem;
+    }
+
+    /* FAQ Section */
+    .faq-main-paragraph {
+        line-height: 1.2;
+    }
+
+    .faq-question p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .faq-answer p {
+        font-size: .8rem;
+        line-height: 1.2;
     }
 
     .plus-minus {
-        font-size: 20px; /* Make icons a bit smaller for tablets */
+        font-size: 30px;
+        height: 40px;
+        width: 40px;
     }
 
-    /* Adjust any other element as needed */
+    .plus-minus i {
+        width: 30px;
+        height: 30px;
+    }
+
+    .faq-item {
+        padding: 10px 0;
+    }
+
+  /* Footer: switch from side-by-side to stacked layout */
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
 }
