@@ -306,7 +306,7 @@ p, span, li {
     align-items: center;
     background-color: #020258; /* Blue box */
     margin-left: 20px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .arrow-box i {
@@ -697,6 +697,7 @@ p, span, li {
     color: #333;
     line-height: 1.6;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .faq-item {
@@ -811,7 +812,6 @@ p, span, li {
 }
 
 .contact-info-details {
-    margin-bottom: 70px;
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -828,32 +828,22 @@ p, span, li {
 
 .contact-item .icon i {
     width: 20px;
+    margin-top: 8px;
 }
 
 .contact-item div strong {
-    font-size: 17px;
-    text-transform: uppercase;
+    font-size: 24px;
+    text-transform: lowercase;
     color:#020258;
-    letter-spacing: 1px;
-    word-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .contact-label {
     font-size: 0.8rem;
 }
 
-.contact-item div p:last-child{
+.contact-item div p:last-child {
     padding-top: 5px;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: space-between;
-}
-
-.social-icons a {
-    font-size: 20px;
-    color: black;
 }
 
 /* Right Side: Quote Form */
@@ -942,7 +932,7 @@ footer {
 }
 
 footer .container {
-    margin: 25px auto;
+    margin: 10px auto;
     justify-content: space-between;
 }
 
@@ -1063,13 +1053,13 @@ footer .container {
 
 
 
-/* Media Query for tablets (max-width: 1024px) */
+/* Media Query for laptops & tablets (max-width: 1024px) */
+/* -------------------------------------------- */
 @media screen and (max-width: 1024px) {
 
     .container {
         max-width: 960px;
         width: 90%;
-        padding: 0 20px;
       }
 
 
@@ -1116,7 +1106,7 @@ footer .container {
     }
 
     .company-logo {
-        width: 60px;
+        width: 50px;
     }
 
     .logo span {
@@ -1251,16 +1241,275 @@ footer .container {
         padding: 10px 0;
     }
 
-  /* Footer: switch from side-by-side to stacked layout */
+  /* Footer */
   .footer-left,
   .footer-right {
-    width: 100%;
     padding: 20px 0;
   }
 
   .footer-right {
-    flex-direction: column;
-    align-items: flex-start;
     gap: 30px;
   }
 }
+
+
+/* Tablets and smaller (portrait) */
+/* -------------------------------------------- */
+@media (max-width: 768px) {
+    /* Adjust font size, layout direction, spacing */
+
+    .container {
+        max-width: 90%;
+        width: 100%;
+    }
+
+    .label {
+        font-size: 1rem;
+        letter-spacing: .5px;
+        margin-bottom: 30px;
+    }
+
+    .cta-button {
+        padding: 7px 10px;
+        font-size: 0.8rem;
+    }
+
+    .arrow-box i {
+        font-size: 1.3rem;
+    }
+
+    /* Top-Bar */
+    .top-bar {
+        font-size: 0.7rem;
+    }
+
+    .infos-text {
+        font-size: 0.7rem;
+    }
+
+    .icon-box {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    .icon-box i {
+        font-size: 10px;
+    }
+
+    .social-links a {
+        font-size: 15px;
+    }
+    
+    /* Navigation-Bar */
+    .company-logo {
+        width: 50px;
+    }
+
+    .logo span {
+        font-size: 1rem;
+    }
+
+    .navlinks ul li a {
+        font-size: 0.7rem;
+    }
+
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        margin-top: 20px;
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    /* About Section */
+    .about-content h2 {
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+
+    .about-content p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .ceo-signature span {
+        margin-top: -35px;
+    }
+
+    .about-image img {
+        height: 300px;
+        width: auto;
+    }
+
+    /* Stat Section */
+    .stat h2 {
+        font-size: 1.3rem;
+    }
+
+    .stat p {
+        letter-spacing: 0;
+    }
+
+    /* Services Section */
+    .services-content p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .service-item .icon-box i {
+        font-size: 25px;
+        width: 25px;
+    }
+
+    .service-text {
+        font-size: 17px;
+    }
+
+    .services-list {
+        gap: 15px;
+        margin-top: 55px;
+    }
+
+    /* Work Section */
+    .work p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+        width: 46%;
+        margin-bottom: 20px;
+    }
+
+    /* Testimonial Section */
+    .testimonial-content p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .testimonial-image-base {
+        height: 300px;
+    }
+
+    .testimonial-container {
+        left: 5%;
+        transform: translateX(-25%);
+        padding: 7px 15px;
+        box-shadow: 0 4px 20px 5px rgba(125, 125, 191, 0.8);
+    }
+
+    .testimonial-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .testimonial-text {
+        gap: 5px;
+    }
+
+    .testimonial-msg {
+        font-size: 0.7rem;
+    }
+
+    .testimonial-name {
+        font-size: 1.2rem;
+    }
+
+    .prev-btn {
+        left: -20px;
+    }
+
+    .next-btn {
+        right: -20px;
+    }
+
+    .prev-btn .arrow-box i, .next-btn .arrow-box i {
+        font-size: 1.5rem;
+    }
+
+    /* FAQ Section */
+    .faq-main-paragraph {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .faq-question p {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .faq-answer p {
+        font-size: 0.7rem;
+        line-height: 1.4;
+    }
+
+    .plus-minus {
+        font-size: 15px;
+        height: 25px;
+        width: 25px;
+    }
+
+    .plus-minus i {
+        width: 15px;
+        height: 15px;
+    }
+
+    .faq-item {
+        padding: 15px 0;
+    }
+
+
+    /* Contact Section */
+    .contact .container {
+        margin: 50px auto;
+        box-shadow: 0 2px 25px 2px rgba(125, 125, 191, 1);
+        width: 100%;
+    }
+
+    .sub-container {
+        padding: 10px;
+        justify-content: space-between;
+    }
+    
+    .contact-info h2 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .contact-info-paragraph {
+        font-size: 0.7rem;
+    }
+
+    .contact-item .icon i {
+        margin-top: 6px;
+    }
+
+    .contact-item div strong {
+        font-size: 18px;
+    }
+
+    .contact-label {
+        font-size: 0.7rem;
+    }
+
+    .quote-form p {
+        font-size: 0.7rem;
+    }
+
+    .send-message-button {
+        padding: 7px 10px;
+        font-size: 0.8rem;
+    }
+
+    /* Footer Section */
+    .footer-left,
+    .footer-right {
+        padding: 15px 0;
+    }
+
+    .footer-right {
+        gap: 20px;
+    }
+  }
