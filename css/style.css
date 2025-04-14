@@ -1252,6 +1252,194 @@ footer .container {
   }
 }
 
+/* Unconventional media queries */
+/* -------------------------------------------- */
+@media screen and (min-width: 820px) and (max-width: 912px) {
+    /* Styles for devices with a width between 820px and 912px */
+    .container {
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .label {
+        font-size: 1rem;
+        letter-spacing: .5px;
+        margin-bottom: 30px;
+    }
+
+    .cta-button {
+        padding: 7px 10px;
+        font-size: 0.8rem;
+    }
+
+    .arrow-box i {
+        font-size: 1.3rem;
+    }
+    
+    /* Navigation-Bar */
+    .company-logo {
+        width: 50px;
+    }
+
+    .logo span {
+        font-size: 1rem;
+    }
+
+    .navlinks ul li a {
+        font-size: 0.7rem;
+    }
+
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 2rem;
+        letter-spacing: -0.5px;
+        line-height: 1;
+    }
+
+    /* About Section */
+    .about-content p {
+        font-size: 0.8rem;
+        line-height: 1.3;
+    }
+
+    .ceo-signature span {
+        margin-top: -30px;
+    }
+
+    /* Stat Section */
+    .stat h2 {
+        font-size: 1.4rem;
+    }
+
+    .stat p {
+        letter-spacing: 0;
+    }
+
+    .service-item .icon-box i {
+        font-size: 30px;
+        width: 30px;
+    }
+
+    .service-text {
+        font-size: 18px;
+    }
+
+    /* Services Section */
+    .services-content p {
+        font-size: 0.8rem;
+        line-height: 1.3;
+    }
+
+    /* Work Section */
+    .work p {
+        font-size: 0.8rem;
+        line-height: 1.3;
+    }
+
+    /* Testimonial Section */
+    .testimonial-content p {
+        font-size: 0.8rem;
+        line-height: 1.3;
+    }
+
+    .testimonial-image-base {
+        height: 300px;
+    }
+
+    .testimonial-msg {
+        font-size: .7rem;
+    }
+
+    .testimonial-name {
+        font-size: 1.4rem;
+    }
+
+    .prev-btn .arrow-box i, .next-btn .arrow-box i {
+        font-size: 1.5rem;
+    }
+
+    .testimonial-container {
+        left: -4%;
+        transform: translateX(-20%);
+        padding: 7px;
+    }
+
+    /* FAQ Section */
+    .faq-main-paragraph {
+        font-size: 0.8rem;
+        line-height: 1.3;
+    }
+
+    .plus-minus {
+        font-size: 20px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .plus-minus i {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Contact Section */
+    .sub-container {
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .contact-info h2 {
+        font-size: 1.1rem;
+    }
+
+    .contact-info-paragraph {
+        font-size: 0.7rem;
+    }
+
+    .contact-item div strong {
+        font-size: 18px;
+    }
+
+    .contact-item .icon i {
+        width: 15px;
+        margin-top: 4.5px;
+    }
+
+    .contact-label {
+        font-size: 0.7rem;
+    }
+
+    .underinfo {
+        letter-spacing: .2px;
+        font-size: 11px;
+    }
+
+    .quote-form {
+        width: 52%;
+        padding: 0px 20px;
+    }
+
+    .quote-form h2 {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+    .quote-form p {
+        margin-bottom: 35px;
+        font-size: 0.7rem;
+        color: #333;
+    }
+
+    .quote-form input, .quote-form select, .quote-form textarea {
+        padding: 8px;
+        font-size: 10px;
+    }
+
+    .send-message-button {
+        width: 78%;
+    }
+}
+
 
 /* Tablets and smaller (portrait) */
 /* -------------------------------------------- */
