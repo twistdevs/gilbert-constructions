@@ -1,3 +1,22 @@
+//Burger Menu & X
+const burger = document.getElementById('burger');
+const navlinks = document.getElementById('navlinks');
+const icon = burger.querySelector('i');
+
+burger.addEventListener('click', () => {
+    navlinks.classList.toggle('show');
+
+    if (icon.classList.contains('fa-bars')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+    } else {
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+    }
+});
+
+
+
 // FAQ button behaviour
 document.querySelectorAll(".faq-question").forEach(button => {
     button.addEventListener("click", () => {
@@ -12,7 +31,7 @@ document.querySelectorAll(".faq-question").forEach(button => {
 
 
 // Contact & Form Submission with Loading Indicator
-document.querySelector(".quote-form form").addEventListener("submit", function(event) {
+document.querySelector(".quote-form form").addEventListener("submit", function (event) {
     event.preventDefault();
 
     document.getElementById("loading-indicator").style.display = "block";  // Show loading indicator
