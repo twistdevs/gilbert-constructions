@@ -2961,6 +2961,7 @@ footer .container {
 
 
 @media (max-width: 360px) {
+
     /* Stats Section */
     .stat p {
         font-size: 1.05rem;
@@ -2970,11 +2971,255 @@ footer .container {
     .faq-question p {
         font-size: 17px;
     }
-    
+
     /* Footer Section */
     .footer-bottom .container p {
         font-size: 1.1rem;
     }
 
     /* End of media queries */
+}
+
+@media (max-width: 320px) {
+
+    /* Standards */
+    .company-logo {
+        width: 50px;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 7px 10px;
+    }
+
+    .label {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .label::before,
+    .label::after {
+        width: 8px;
+        height: 8px;
+    }
+
+    .arrow-box i {
+        font-size: 1.3rem;
+    }
+
+    /* Navigation Section */
+    .navlinks ul li a {
+        font-size: 1.3rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 90vh;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    /* About Section */
+    .about-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-content p {
+        font-size: 0.8rem;
+    }
+
+    .signature {
+        font-size: 2.5rem;
+    }
+
+    .ceo-signature span {
+        margin: -45px 40px auto;
+    }
+
+    /* Stats Section */
+    .stat h2 {
+        font-size: 1.8rem;
+    }
+
+    .stat p {
+        font-size: 0.9rem;
+    }
+
+    /* Services Section */
+    .services-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .services-content p {
+        font-size: 0.8rem;
+    }
+
+    .service-item .icon-box {
+        padding: 20px;
+    }
+
+    .service-item .icon-box i {
+        font-size: 25px;
+        width: 30px;
+    }
+
+    .service-text {
+        font-size: 18px;
+    }
+
+    /* Work Section */
+    .work h2 {
+        font-size: 1.5rem;
+    }
+
+    .work p {
+        font-size: 0.8rem;
+    }
+
+    /* Testimonaial Section */
+    .testimonial-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .testimonial-content p {
+        font-size: 0.8rem;
+    }
+
+    .testimonial-image-base {
+        height: 200px;
+    }
+
+    .testimonial-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .prev-btn .arrow-box i,
+    .next-btn .arrow-box i {
+        font-size: 1.3rem;
+    }
+
+    .testimonial-box {
+        gap: 10px;
+    }
+
+    .testimonial-container {
+        padding: 10px;
+    }
+
+    .prev-btn {
+        left: -25px;
+    }
+
+    .next-btn {
+        right: -25px;
+    }
+
+    /* FAQ Section */
+    .faq .container h2 {
+        font-size: 1.5rem;
+    }
+
+    .faq-main-paragraph {
+        font-size: 0.8rem;
+    }
+
+    .faq-question p {
+        font-size: 15px;
+        font-size: 0.7rem;
+    }
+
+    /* Contact Section */
+    .contact-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info-paragraph {
+        font-size: 0.9rem;
+    }
+
+    .contact-item div strong {
+        font-size: 19px;
+    }
+
+    .contact-label {
+        font-size: 0.8rem;
+    }
+
+    .underinfo {
+        font-size: 12px;
+    }
+
+    .contact-item .icon {
+        font-size: 20px;
+    }
+
+    .contact-item .icon i {
+        width: 20px;
+    }
+
+    .quote-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .quote-form p {
+        font-size: 0.9rem;
+    }
+
+    .quote-form input,
+    .quote-form select,
+    .quote-form textarea {
+        padding: 13px;
+        font-size: 13px;
+    }
+
+    .send-message-button {
+        font-size: 0.9rem;
+        padding: 7px 10px;
+
+    }
+
+    .send-message-button .arrow-box i {
+        font-size: 1.3rem;
+    }
+
+    /* Footer Section */
+    .company-name-logo div span {
+        font-size: 15px;
+    }
+
+    .motto p {
+        font-size: 0.8rem;
+    }
+
+    .footer-contact h3 {
+        font-size: 17px;
+    }
+
+    .footer-contact-details {
+        gap: 10px;
+    }
+
+    .footer-contact-details div i {
+        font-size: 15px;
+        width: 15px;
+    }
+
+    .footer-contact-details div p {
+        font-size: 0.8rem;
+    }
+
+    .footer-socials a {
+        font-size: 25px;
+    }
+
+    .footer-bottom .container p {
+        font-size: 0.9rem;
+    }
 }
