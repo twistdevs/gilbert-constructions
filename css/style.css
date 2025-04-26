@@ -2361,6 +2361,11 @@ footer .container {
         line-height: 1.2;
     }
 
+    /* Navigation Section */
+    .navlinks {
+        width: 50%;
+    }
+
     /* About Section */
     .about-content {
         width: 80%;
@@ -2450,7 +2455,8 @@ footer .container {
         font-size: 1.4rem;
     }
 
-    .prev-btn .arrow-box i, .next-btn .arrow-box i {
+    .prev-btn .arrow-box i,
+    .next-btn .arrow-box i {
         font-size: 2rem;
     }
 
@@ -2533,7 +2539,9 @@ footer .container {
         font-size: 1.2rem;
     }
 
-    .quote-form input, .quote-form select, .quote-form textarea {
+    .quote-form input,
+    .quote-form select,
+    .quote-form textarea {
         padding: 15px;
         font-size: 15px;
     }
@@ -2567,7 +2575,7 @@ footer .container {
     }
 
     .footer-contact-details div p {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
     .footer-socials a {
@@ -2577,4 +2585,391 @@ footer .container {
     .twistdevs .container {
         font-size: 8px;
     }
+}
+
+@media (max-width: 480px) {
+    /* Styles for screens 480px and below: e.g Nokia N9 */
+
+    /* Standards */
+    .label {
+        font-size: 1.8rem;
+    }
+
+    .cta-button {
+        font-size: 1.1rem;
+    }
+
+    .arrow-box i {
+        font-size: 1.5rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 95vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-content p {
+        font-size: 1.3rem;
+    }
+
+    /* About Section */
+    .about-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-content p {
+        font-size: 1.1rem;
+    }
+
+    .ceo-signature span {
+        margin: -55px 40px auto;
+    }
+
+    /* Stat Section */
+    .stat p {
+        font-size: 1.2rem;
+    }
+
+    /* Services Section */
+    .services-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .services-content p {
+        font-size: 1.1rem;
+    }
+
+    .service-text {
+        font-size: 22px;
+    }
+
+    /* Work Section */
+    .work h2 {
+        font-size: 1.8rem;
+    }
+
+    .work p {
+        font-size: 1.1rem;
+    }
+
+    /* Testimonial Section */
+    .testimonial-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .testimonial-content p {
+        font-size: 1.1rem;
+    }
+
+    .testimonial-container {
+        padding: 10px 15px;
+    }
+
+    .testimonial-image-base {
+        height: 280px;
+    }
+
+    .testimonial-img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .testimonial-msg {
+        font-size: .9rem;
+    }
+
+    .testimonial-name {
+        font-size: 1.2rem;
+    }
+
+    .prev-btn {
+        left: -30px;
+    }
+
+    .next-btn {
+        right: -30px;
+    }
+
+    /* FAQ Section */
+    .faq .container h2 {
+        font-size: 1.8rem;
+    }
+
+    .faq-main-paragraph {
+        font-size: 1.1rem;
+        width: 90%;
+    }
+
+    .faq-question p {
+        font-size: 20px;
+    }
+
+    /* Contact Section */
+    .contact .container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .contact-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-item div strong {
+        font-size: 22px;
+    }
+
+    .send-message-button {
+        font-size: 1.1rem;
+    }
+
+    .send-message-button .arrow-box i {
+        font-size: 1.7rem;
+    }
+
+    /* Footer Section */
+    .footer-bottom .container p {
+        font-size: 1.3rem;
+        margin-top: 50px;
+    }
+}
+
+
+@media (max-width: 414px) {
+
+    /* Hero Section */
+    .hero {
+        height: 100vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    /* About Section */
+    .about-content h2 {
+        font-size: 1.7rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+
+    .ceo-signature span {
+        margin: -52px 40px auto;
+    }
+
+    /* Stats Section */
+    .stat p {
+        font-size: 1.2rem;
+    }
+
+    /* Services Section */
+    .services-content h2 {
+        font-size: 1.7rem;
+    }
+
+    .services-content p {
+        font-size: 1rem;
+    }
+
+    .service-text {
+        font-size: 22px;
+    }
+
+    /* Work Section */
+    .work h2 {
+        font-size: 2rem;
+    }
+
+    .work p {
+        font-size: 1rem;
+    }
+
+    /* Testimonial Section */
+    .testimonial-container {
+        transform: translateY(-10%);
+        padding: 15px 30px;
+    }
+
+    .testimonial-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .testimonial-content p {
+        font-size: 1rem;
+    }
+
+    .testimonial-img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .testimonial-msg {
+        font-size: 0.9rem;
+    }
+
+    .next-btn {
+        right: -15px;
+    }
+
+    .prev-btn {
+        left: -15px;
+    }
+
+    /* FAQ Section */
+    .faq .container h2 {
+        font-size: 1.8rem;
+    }
+
+    .faq-main-paragraph {
+        font-size: 1rem;
+    }
+
+    .faq-question p {
+        font-size: 19px;
+    }
+
+    .plus-minus i {
+        width: 15px;
+        height: 15px;
+    }
+
+    .plus-minus {
+        font-size: 15px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .faq-answer p {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+
+
+    /* Contact Section */
+    .contact-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-info-paragraph {
+        font-size: 1.1rem;
+    }
+
+    .quote-form h2 {
+        font-size: 1.8rem;
+    }
+
+    .quote-form p {
+        font-size: 1.1rem;
+    }
+
+    /* Footer Section */
+    .footer-bottom .container p {
+        font-size: 1.3rem;
+        margin-top: 50px;
+    }
+
+    /* End of media queries for 414px  */
+}
+
+
+@media (max-width: 390px) {
+
+    /* Stats Section */
+    .stat p {
+        font-size: 1.1rem;
+    }
+
+    /* Testimonial Section */
+    .testimonial-image-base {
+        height: 250px;
+    }
+
+    .testimonial-container {
+        padding: 10px 25px;
+    }
+
+    .testimonial-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .testimonial-msg {
+        font-size: 0.7rem;
+    }
+
+    .testimonial-name {
+        font-size: 1.1rem;
+    }
+
+    .prev-btn .arrow-box i,
+    .next-btn .arrow-box i {
+        font-size: 1.5rem;
+    }
+
+    .next-btn {
+        right: -15px;
+    }
+
+    .prev-btn {
+        left: -15px;
+    }
+
+    /* Footer Section */
+    .footer-bottom .container p {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+@media (max-width: 375px) {
+
+    .company-logo {
+        width: 60px;
+    }
+
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 2.1rem;
+    }
+
+    /* About Section  */
+    .about-image img {
+        height: 330px;
+    }
+
+    /* FAQ Section */
+    .faq-question p {
+        font-size: 18px;
+    }
+
+    .faq-answer p {
+        font-size: 0.8rem;
+    }
+
+    /* end of media queries */
+}
+
+
+@media (max-width: 360px) {
+    /* Stats Section */
+    .stat p {
+        font-size: 1.05rem;
+    }
+
+    /* Footer Section */
+    .footer-bottom .container p {
+        font-size: 1.1rem;
+    }
+
+    /* End of media queries */
 }
