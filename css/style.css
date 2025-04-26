@@ -2966,6 +2966,11 @@ footer .container {
         font-size: 1.05rem;
     }
 
+    /* FAQ Section */
+    .faq-question p {
+        font-size: 17px;
+    }
+    
     /* Footer Section */
     .footer-bottom .container p {
         font-size: 1.1rem;
