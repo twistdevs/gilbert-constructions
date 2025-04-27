@@ -51,7 +51,7 @@ li {
 
 /* H2 Labels */
 .label {
-    font-size: 1.3rem;
+    font-size: 2.3rem;
     font-weight: 700;
     color: #020258;
     text-transform: uppercase;
@@ -411,7 +411,7 @@ li {
     background-color: #020258;
     /* Adjust to match your design */
     color: white;
-    padding: 15px 0;
+    padding: 25px 0;
     text-align: left;
     margin: 100px 0;
 }
@@ -528,6 +528,11 @@ li {
     flex-direction: column;
     align-items: center;
     margin: 100px 0;
+    text-align: center;
+}
+
+.work .container {
+    flex-direction: column;
 }
 
 .work h2 {
@@ -544,26 +549,60 @@ li {
     margin-bottom: 15px;
 }
 
+/* Main Wrapper for scrolling */
+/* NEW: Wrapper just controls overflow */
+.work-gallery-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
 .work-gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+}
+
+.work-gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.work-gallery::-webkit-scrollbar {
+    height: 8px;
+}
+
+.work-gallery::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 4px;
+}
+
+.work-gallery::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 .gallery1 {
     position: relative;
-    /* Parent div becomes reference for positioning */
 }
 
 .gallery1 button {
     width: max-content;
     position: absolute;
     bottom: 15px;
-    /* Adjust vertical position */
     left: 50%;
-    /* Move to the center */
     transform: translateX(-50%);
-    /* Shift back by 50% of its own width */
     margin: 0;
+}
+
+.work-item {
+    flex: 0 0 auto;
+    width: 300px;
+    scroll-snap-align: start;
+    height: 250px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    /* overflow: hidden; */
 }
 
 .work-item img {
@@ -3222,4 +3261,6 @@ footer .container {
     .footer-bottom .container p {
         font-size: 0.9rem;
     }
+
+    /* End of hopefully the last media queries: 320px  */
 }
