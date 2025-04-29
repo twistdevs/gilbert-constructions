@@ -1,4 +1,6 @@
-//Burger Menu & X
+// =======================
+// Burger Menu & X Toggle 
+// =======================
 const burger = document.getElementById('burger');
 const navlinks = document.getElementById('navlinks');
 const icon = burger.querySelector('i');
@@ -16,8 +18,46 @@ burger.addEventListener('click', () => {
 });
 
 
+// =======================
+// Work Slider Behaviour
+// =======================
+const slider = document.querySelector('.work-gallery');
+let isDown = false;
+let startX;
+let scrollLeft;
 
-// FAQ button behaviour
+if (slider) {
+  slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider.classList.add('active');
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+  });
+
+  slider.addEventListener('mouseleave', () => {
+    isDown = false;
+    slider.classList.remove('active');
+  });
+
+  slider.addEventListener('mouseup', () => {
+    isDown = false;
+    slider.classList.remove('active');
+  });
+
+  slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 2; // Adjust scroll speed
+    slider.scrollLeft = scrollLeft - walk;
+  });
+}
+
+
+
+// =======================
+// FAQ Button Behaviour
+// =======================
 document.querySelectorAll(".faq-question").forEach(button => {
     button.addEventListener("click", () => {
         const answer = button.nextElementSibling;
@@ -29,8 +69,9 @@ document.querySelectorAll(".faq-question").forEach(button => {
     });
 });
 
-
+// =======================
 // Contact & Form Submission with Loading Indicator
+// =======================
 document.querySelector(".quote-form form").addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -88,7 +129,9 @@ document.querySelector(".quote-form form").addEventListener("submit", function (
     this.reset();
 });
 
-// Function to display error messages
+// =======================
+// Function to Display Error Messages
+// =======================
 function displayError(input, message) {
     const errorMsg = document.createElement("p");
     errorMsg.textContent = message;
@@ -98,3 +141,4 @@ function displayError(input, message) {
     input.style.border = "2px solid red";
     input.insertAdjacentElement("afterend", errorMsg);
 }
+

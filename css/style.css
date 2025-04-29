@@ -563,19 +563,26 @@ li {
     gap: 1rem;
     scroll-snap-type: x mandatory;
     padding-bottom: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    
+    /* Firefox optional settings */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
 }
 
-.work-gallery::-webkit-scrollbar {
-    display: none;
-}
+.work-gallery:active {
+    cursor: grabbing;
+  }
 
 .work-gallery::-webkit-scrollbar {
-    height: 8px;
+    height: 6px;
 }
 
 .work-gallery::-webkit-scrollbar-thumb {
-    background-color: #aaa;
-    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
 }
 
 .work-gallery::-webkit-scrollbar-track {
@@ -1942,7 +1949,7 @@ footer .container {
         justify-content: center;
         transform: translateX(100%);
         transition: transform 0.4s ease-in-out;
-        z-index: 500;
+        z-index: 1000;
     }
 
     .navlinks.show {
