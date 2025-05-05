@@ -73,6 +73,23 @@ li {
     display: inline-block;
 }
 
+/* Dimmed(mobile devices) */
+/* Fullscreen Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* adjust darkness */
+    z-index: 998;
+    display: none; /* hide by default */
+  }
+  
+  .overlay.active {
+    display: block;
+  }
+  
 /*************** Top Bar ***************/
 .top-bar {
     background: linear-gradient(180deg, #DA6A6A, #DB0706);
@@ -1924,7 +1941,7 @@ footer .container {
     /* Navigation Bar */
 
     #burger i {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
 
     .burger {
@@ -1942,7 +1959,7 @@ footer .container {
         right: 0;
         height: 100vh;
         width: 40%;
-        background-color: #7D7DBF;
+        background-color: #020258;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2649,6 +2666,12 @@ footer .container {
         font-size: 1.5rem;
     }
 
+    /* Navigation Section */
+    .navlinks ul li a {
+        font-size: 1.5rem;
+    }
+
+
     /* Hero Section */
     .hero {
         height: 95vh;
@@ -3007,6 +3030,11 @@ footer .container {
 
 
 @media (max-width: 360px) {
+
+    /* Navigation Section */
+    #burger i {
+        font-size: 2.5rem;
+    }
 
     /* Stats Section */
     .stat p {

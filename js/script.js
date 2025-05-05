@@ -1,20 +1,31 @@
 // =======================
-// Burger Menu & X Toggle 
+// Burger Menu & X Toggle
 // =======================
 const burger = document.getElementById('burger');
 const navlinks = document.getElementById('navlinks');
 const icon = burger.querySelector('i');
+const overlay = document.getElementById('overlay');
 
 burger.addEventListener('click', () => {
     navlinks.classList.toggle('show');
+    overlay.classList.toggle('active');
 
-    if (icon.classList.contains('fa-bars')) {
+    if (navlinks.classList.contains('show')) {
         icon.classList.remove('fa-bars');
         icon.classList.add('fa-xmark');
     } else {
         icon.classList.remove('fa-xmark');
         icon.classList.add('fa-bars');
     }
+});
+
+//Overlay full page when navigation menu is open
+// Close nav if overlay is clicked
+overlay.addEventListener('click', () => {
+    navlinks.classList.remove('show');
+    overlay.classList.remove('active');
+    icon.classList.remove('fa-xmark');
+    icon.classList.add('fa-bars');
 });
 
 
